@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 import speech_recognition as sr
 import google.generativeai as genai
 
-load_dotenv(".env")
-
+load_dotenv("secrets.env")
 
 genai.configure(api_key = os.environ["GOOGLE_API_KEY"])
 r = sr.Recognizer()
